@@ -1,0 +1,292 @@
+#musiccontainer{
+    position: relative;
+    /* height: 65vh; */
+    /* width: 60vw; */
+    min-width: 15vw;
+    min-height: 30vh;
+    background-color: RGBA(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgb(243, 232, 232);
+    border-radius: 10px;
+    /* margin-top: 2vh; */
+    /* transform: translate(-50%,-50%); */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3vw; */
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 1vw;
+    z-index: 99999999;
+    overflow: hidden;
+    margin: 0 1vw;
+    animation: musiccnt 2s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
+    
+
+}
+@keyframes musiccnt{
+    from{top: -50%;
+    opacity: 0;}
+    to{top: 30%;
+    opacity: 1;}
+}
+
+.popuphindi{
+    position: absolute;
+    /* margin-top: 5vh; */
+    /* height: 450px; */
+    width: 22vw;
+    background-color: RGBA(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    /* background-color: #fff; */
+    z-index: 999999999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 350px;
+    display: none;
+}
+
+.popupenglish{
+    position: absolute;
+    /* margin-top: 5vh; */
+    /* height: 450px; */
+    width: 22vw;
+    background-color: RGBA(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    /* background-color: #fff; */
+    z-index: 999999999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 350px;
+    display: none;
+}
+
+.ri-close-fill{
+    position: absolute;
+    background-color: #fff;
+    top: 1vh;
+    right: -1.5vw;
+    transform: translate(-50%,-50%);
+    font-size:2.5vh ;
+    border-radius: 5px;
+}
+
+#io{
+    position: absolute;
+    background-color: #fff;
+    top: 1vh;
+    right: -1vw;
+    transform: translate(-50%,-50%);
+    font-size:2.5vh ;
+    border-radius: 5px;
+}
+.popuphindi h3{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 25px;
+    color: white;
+}
+.popupenglish h3{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 25px;
+    color: white;
+}
+.popicon{
+    /* margin-top: 1vh; */
+    position: relative;
+    height: 35vh;
+    width: 230px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;    
+    max-width: 400px;
+    min-width: 200px;
+    /* padding: 0 20px; */
+    min-height: 50px;
+}
+
+.ico{
+    margin-top: 2vh;
+    position: relative;
+    height: 6vh;
+    width: 4vw;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    min-width: 100px;
+    min-height: 70px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 20px; */
+}
+.ico h5{
+    font-size: 1.3vh;
+    
+}
+
+.ri-youtube-line{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid white; */
+
+}
+
+.ri-netease-cloud-music-line{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid white; */
+}
+
+.ri-apple-line{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid white; */
+}
+
+.ri-amazon-line{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid white; */
+}
+
+.ri-spotify-line{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid white; */
+}
+.clhne{
+    position: absolute;
+    /* height: 30vh; */
+    width: 35vw;
+    min-width: 250px;
+    max-width: 350px;
+    /* max-height: 300px; */
+    min-height: 240px;
+    /* max-height: 50px; */
+    /* background-color: green; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 99999999;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    margin: 3vh 20px;
+
+}
+.clhne2{
+    position: absolute;
+    /* height: 30vh; */
+    width: 35vw;
+    min-width: 250px;
+    max-width: 350px;
+    /* max-height: 300px; */
+    min-height: 240px;
+    /* max-height: 50px; */
+    /* background-color: green; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 99999999;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    margin: 3vh 20px;
+}
+
+@keyframes h1{
+    animation: h1 3s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+
+    from{left: 6%;
+    opacity: 0;}
+    to{left: 15%;
+    opacity: 1;}
+}
+
+
+
+<ul class="navbar-list">
+    <li> <a onClick="refreshPage()" href="#page1" class="navbar-link displ">HOME</a></li>
+    <li> <a onClick="refreshPage()" href="./#page2" class="navbar-link">EVENTS</a></li>
+    <li> <a onClick="refreshPage()" href="#page3" id="gallery" class="navbar-link">GALLERY</a></li>
+    <li> <a href="#page4" class="navbar-link">MUSIC</a></li>
+    <li> <a href="#page5" class="navbar-link">CONTACT</a></li>
+    <li> <a href="#page6" class="navbar-link">ABOUT</a></li>
+    
+</ul>
+
+
+
+@media (max-width: 801px){
+    #musiccontainer{
+        margin: 0 2vw;
+    }
+    #page4{
+        position: relative;
+        height: 100vh;
+        width:100vw;
+        /* background-color: blue; */
+        background:transparent;
+        /* background-position: center; */
+        /* background-size: cover; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        overflow: hidden;
+        /* background-color: #265DF2; */
+    }
+    
+   
+} 
+
+@media (max-width:1880px){
+    #page2{
+        display: none;
+    }
+    #page3{
+        display: none;
+    }
+    #page4{
+        display: none;
+    }
+    #page5{
+        display: none;
+    }
+    #page6{
+        display: none;
+    }
+}

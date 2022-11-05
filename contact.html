@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    #page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1577026273285-f4031a9a6131?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    }
+</style>
+<body>
+        
+    <div id="main">
+        <div id="navhead">
+
+        <header class="header active">
+                <img class="logo" src="./logo/W-Logo.png" alt="logoterimakachodo">
+                
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                    <li> <a class="navbar-link" href="./index.html">HOME</a></li>
+                    <li> <a class="navbar-link" href="./events.html">EVENTS</a></li>
+                    <li> <a class="navbar-link" href="./gallery.html" id="gallery">GALLERY</a></li>
+                    <li> <a class="navbar-link" href="./music.html">MUSIC</a></li>
+                    <li> <a class="navbar-link" href="./contact.html">CONTACT</a></li>
+                    <li> <a class="navbar-link" href="./about.html">ABOUT</a></li>
+                    
+                    </ul>
+                </nav>
+            <nav class="navbarmob">
+                    <ul class="navbar-list">
+                    <li> <a href="./index.html" class="navbar-link">HOME</a></li>
+                    <li> <a href="./events.html" class="navbar-link">EVENTS</a></li>
+                    <li> <a href="./gallery.html" id="gallery" class="navbar-link">GALLERY</a></li>
+                    <li> <a href="./music.html" class="navbar-link">MUSIC</a></li>
+                    <li> <a href="./contact.html" class="navbar-link">CONTACT</a></li>
+                    <li> <a href="./about.html" class="navbar-link">ABOUT</a></li>
+                    </ul>
+            </nav>
+            <div class="mobile-navbar-btn">
+                <i class="ri-menu-fill"></i>
+                <i class="ri-close-line"></i>
+            </div>
+        </header>
+            
+        </div>
+        <div class="nil">
+        </div>
+        <div id="page5">
+
+            <div id="overlay">
+            </div>
+            <div class="contact">
+            <!-- <section class="contact"> -->
+                <div class="content">
+                    <h2>Get in Touch</h2>
+                    <h5>Feel Free to contact me Anytime</h5>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+        
+                        <div class="box">
+                            <div class="icon">
+                                <i class="ri-map-pin-2-fill icn"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>C9_156 Brazil <br> Kristopher Road </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="ri-mail-line icn"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>priyanshu9555@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="ri-phone-fill icn"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>(+11)507-475-6094</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form id="submit-form">
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <label for="fnanme"></label>
+                                <input type="text" id="fname" name="name" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="email" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <label for="subject"></label>
+                                <textarea id="subject" name="message" required="required"></textarea>
+                                <span>Type your Message....</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </section> -->
+            </div>
+        </div>
+    </div>
+    <!-- Swipper JS -->
+<script src="./js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwCeXMnTCvb9z0oymiyizXURA4xi0uxv64q58foRMYUs1gfyJTDeAwz7pbrsaeFaMDU/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Message Sent Successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+</body>
+</html>
