@@ -83,6 +83,8 @@ html,body {
 }
 .navbarmob{
     display: none;
+    position: absolute;
+    left: -50vw;
 }
 .navbar-list{
     /* width: 50vw; */
@@ -111,7 +113,7 @@ html,body {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
     transition: all 0.3s;
@@ -241,6 +243,18 @@ nav{
         display: block;
     }
 
+    .navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+    margin: 3vh 0;
+    /* background-color: black; */
+}
     /* #page1{
         background:transparent;
     }
@@ -258,10 +272,6 @@ nav{
         background:transparent;
     }
      */
-    #maine{
-        height: ;
-    }
-     
 }
 
 
