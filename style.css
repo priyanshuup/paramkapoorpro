@@ -1262,7 +1262,7 @@ video{
 #musiccontainer{
     position: relative;
     height: 75vh;
-    width: 70vw;
+    width: 75vw;
     /* margin: 10vh; */
     background-color: RGBA(0,0,0,0.3);
     backdrop-filter: blur(12px);
