@@ -56,7 +56,7 @@ btn.addEventListener("click", function(){
         navbar.style.visibility = "visible";
         btn.style.display ="none"
         btnclose.style.display ="block"
-        centercont.style.transform ="translate(100%)"
+        centercont.style.transform ="translate(-150%)"
 
         flag = 1
         // navbar.pointerr = "auto"
