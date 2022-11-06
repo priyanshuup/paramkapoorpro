@@ -377,4 +377,4 @@ gsap.from("#head",{
     delay : 0 ,
     duration : 2 ,
     y:70
-},
+})
