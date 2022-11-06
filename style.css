@@ -264,6 +264,16 @@ nav{
     margin: 3vh 0;
     /* background-color: black; */
 }
+
+.contactInfo{
+    max-height: 30vh;
+    width: 30vw;
+    margin-bottom: 2vh;
+}
+.contactForm{
+    /* height: 40vh; */
+    width: 30vw;
+}
     /* #page1{
         background:transparent;
     }
@@ -1262,7 +1272,7 @@ video{
 #musiccontainer{
     position: relative;
     height: 75vh;
-    width: 75vw;
+    width: 70vw;
     /* margin: 10vh; */
     background-color: RGBA(0,0,0,0.3);
     backdrop-filter: blur(12px);
@@ -1679,7 +1689,7 @@ video{
     color: #fff;
 }
 .container{
-    margin-top: 5vh;
+    margin-top: 3vh;
     position: relative;
     /* height: 100vh; */
     width: 100%;
